@@ -252,6 +252,8 @@ main {
 .crypto .crypto-card .price {
     text-align: right;
 }
+marquee{
+    overflow:hidden;
 
 .footer {
     background-color: var(--backgroundColor);
