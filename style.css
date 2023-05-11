@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.news .writers::-webkit-scrollbar,
+.news .writers-container::-webkit-scrollbar {
+    scale: none;
+}
+
+.hamburger,
+.close {
+    display: none;
+}
+
+:root {
+    --backgroundColor: #394867;
+    --lightColor: #F1F6F9;
+    --greyColor: #9BA4B5;
+    --hoverColor: #212A3E;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.totop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    background-color: var(--backgroundColor);
+    border-radius: 50%;
+    color: var(--lightColor);
+    border: 1px solid var(--lightColor);
+    visibility: visible;
+    z-index: 999;
+}
+
+.totop:hover {
+    background-color: var(--hoverColor);
+}
+
+.header {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    justify-content: space-around;
+}
+
+.logo a {
+    color: var(--lightColor);
+    font-size: 30px;
+}
+
+.header .nav .list .list-item,
+.nav2 ul li {
+    transition: all .4s ease;
+}
+
+.header .nav .list .list-item:hover,
+.nav2 ul li a:hover {
+    background-color: var(--hoverColor);
+}
+
+.header .nav .list .list-item .list-item-link,
+.nav2 ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: var(--lightColor);
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+}
+
+.slider .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.slider .active {
+    opacity: 1;
+}
+
+.slider button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: var(--lightColor);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.slider .nextSlide {
+    right: 0px;
+}
+
+.news {
+
+    margin: 50px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.news .news-card-container {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news .news-card-container .news-card {
+
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--greyColor),
+        -5px 5px 5px var(--greyColor);
+    transition: translateY .5s ease;
+    cursor: pointer;
+}
+
+.news .news-card-container .news-card:hover {
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+.news .news-card-container .news-card .news-image {
+    width: 100%;
+
+}
+
+.news .news-card-container .news-card .news-header {
+    line-height: 30px;
+    letter-spacing: .7px;
+    margin-bottom: 20px;
+}
+
+.news .writers {
+    width: 20%;
+    height: 500px;
+    text-align: center;
+    overflow-y: scroll;
+
+}
+
+.news .writers h3 {
+    font-size: 25px;
+    color: var(--hoverColor);
+}
+
+.news .writers .writers-container {
+    flex-direction: column;
+}
+
+.news .writers .writers-container .writer {
+    width: 200px;
+    margin: 10px auto;
+    border-bottom: 2px solid var(--hoverColor);
+}
+
+.news .writers .writers-container .writer:last-child {
+    border-bottom: none;
+}
+
+.news .writers .writers-container .writer .writer-image {
+    width: 100px;
+    margin: 0px auto;
+}
+
+.news .writers .writers-container .writer .writer-name {
+    margin: 10px 0px;
+}
+
+.crypto-about {
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.crypto-about .crypto-header {
+    background-color: var(--hoverColor);
+    color: var(--lightColor);
+    width: 200px;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.crypto-about .crypto-header span {
+    display: block;
+}
+
+.crypto {
+    gap: 20px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.crypto .crypto-card {
+    padding-right: 30px;
+    border-right: 1px solid var(--greyColor);
+}
+
+.crypto .crypto-card .crypto-name img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.crypto .crypto-card .price {
+    text-align: right;
+}
+
+.footer {
+    background-color: var(--backgroundColor);
+}
+
+.footer .footer-container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    justify-content: space-between;
+
+}
+
+.footer .footer-container a {
+    color: var(--lightColor);
+}
+
+.footer .footer-container .nav ul li {
+    transition: all .4s ease;
+}
+
+.footer .footer-container .nav ul li:hover {
+    background-color: var(--hoverColor);
+}
+
+.footer .footer-container .nav ul li a {
+    display: block;
+    padding: 20px;
+}
+
+.footer .footer-container .social-links a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer .footer-container .social-links a:hover i {
+    color: var(--greyColor);
+}
+
+.social-links a i {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .header .nav .list .list-item .list-item-link {
+
+        padding: 10px 15px;
+    }
+
+    .news {
+        flex-direction: column-reverse;
+    }
+
+    .news .writers {
+        width: 100%;
+        height: 300px;
+    }
+
+    .news .writers h3 {
+        margin-bottom: 20px;
+    }
+
+    .news .writers .writers-container {
+        flex-direction: row;
+        padding: 0px 10px;
+        justify-content: flex-start;
+        gap: 40px;
+        overflow: auto;
+    }
+
+    .news .writers .writers-container .writer {
+        border-bottom: none;
+        padding-right: 30px;
+        border-right: 2px solid var(--hoverColor);
+    }
+
+    .news .writers .writers-container .writer:last-child {
+        border-right: none;
+    }
+
+    .news .writers .writers-container .writer .writer-image {
+        width: 150px;
+    }
+
+    .news {
+        margin: 50px 0px;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .news .news-card-container {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news .news-card-container .news-card {
+        width: 30%;
+        height: 300px;
+    }
+
+    .news .news-card-container .news-card .news-header {
+        padding: 0px 10px;
+    }
+
+    .news .news-card-container .news-card .news-image {
+        max-height: 300px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:574px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .crypto-about {
+        flex-direction: column;
+    }
+
+    .crypto-about .crypto-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .news .news-card-container .news-card {
+        width: 48%;
+        height: 300px;
+    }
+
+    .footer-container .nav2 ul {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .nav2 ul li a {
+        width: 200px;
+        text-align: center;
+    }
+
+    .nav {
+        transform: translateX(100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--backgroundColor);
+        z-index: 999;
+        transition: all .4s ease;
+        justify-content: center;
+    }
+
+    .show {
+        transform: translateX(0);
+
+    }
+
+    .nav .list {
+        text-align: center;
+        display: block;
+    }
+
+    .nav .list .list-item .list-item-link {
+        display: block;
+        width: 300px;
+    }
+
+    .hamburger {
+        display: block;
+        color: var(--lightColor);
+        cursor: pointer;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 90px;
+        font-size: 25px;
+        color: var(--lightColor);
+    }
+
+}

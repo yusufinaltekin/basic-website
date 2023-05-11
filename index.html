@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>News</title>
+</head>
+
+<body>
+
+    <a href="#" class="totop flex">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <header class="header flex">
+        <div class="logo">
+            <a href="#">Haberler</a>
+        </div>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav">
+            <ul class="list flex">
+                <div class="close"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                <li class="list-item"><a href="#" class="list-item-link">Gündem</a></li>
+                <li class="list-item"><a href="#" class="list-item-link">Teknoloji</a></li>
+                <li class="list-item"><a href="#" class="list-item-link">Siyaset</a></li>
+                <li class="list-item"><a href="#" class="list-item-link">Uzay</a></li>
+                <li class="list-item"><a href="#" class="list-item-link">Askeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slide active">
+                <img src="./images/asker.jpg" alt="Asker">
+            </div>
+            <div class="slide">
+                <img src="./images/ayasofya.jpg" alt="Ayasofya">
+            </div>
+            <div class="slide">
+                <img src="./images/ekonomi.jpg" alt="Ekonomi">
+            </div>
+            <div class="slide">
+                <img src="./images/fotbol.jpg" alt="Fotbol">
+            </div>
+            <div class="slide">
+                <img src="./images/roket.jpg" alt="Roket">
+            </div>
+
+            <button class="prevSlide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="nextSlide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <section class="crypto-about flex">
+
+            <div class="crypto-header">
+                Kripto <span>Borsası</span>
+            </div>
+
+            <marquee behavior="" direction="">
+                <div class="crypto flex">
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Bitcoin.svg.png" alt="">
+                            <p>Bitcoin</p>
+                        </div>
+                        <div class="price">
+                            28.880$
+                        </div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/330px-TRON-logo-EN-vertical.svg.png" alt="">
+                            <p>Tron</p>
+                        </div>
+                        <div class="price">
+                            8.500$
+                        </div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Algorand_mark.svg.png" alt="">
+                            <p>Algorand</p>
+                        </div>
+                        <div class="price">
+                            2.880$
+                        </div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/BNB,_native_cryptocurrency_for_the_Binance_Smart_Chain.svg.png"
+                                alt="">
+                            <p>BNB</p>
+                        </div>
+                        <div class="price">
+                            17.520$
+                        </div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Cardano_Logo.jpg" alt="">
+                            <p>Cordano</p>
+                        </div>
+                        <div class="price">
+                            2.193$
+                        </div>
+                    </div>
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Chainlink_Logo_Blue.svg.png" alt="">
+                            <p>ChainLink</p>
+                        </div>
+                        <div class="price">
+                            793$
+                        </div>
+                    </div>
+
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Dogecoin-logo.png" alt="">
+                            <p>Dogecoin</p>
+                        </div>
+                        <div class="price">
+                            19.320$
+                        </div>
+                    </div>
+
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/etheryum.png" alt="">
+                            <p>Etheryum</p>
+                        </div>
+                        <div class="price">
+                            43.000$
+                        </div>
+                    </div>
+
+
+                    <div class="crypto-card">
+                        <div class="crypto-name flex">
+                            <img src="./images/coins/Tether_Logo.svg.png" alt="">
+                            <p>Tether</p>
+                        </div>
+                        <div class="price">
+                            2.439$
+                        </div>
+                    </div>
+                </div>
+            </marquee>
+        </section>
+
+        <section class="news flex">
+            <div class="news-card-container flex">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber1.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber2.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber3.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber4.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber1.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="./images/haber2.jpg" alt="haber">
+                    </div>
+                    <div class="news-header">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="writers">
+                <h3>Yazarlar</h3>
+
+                <div class="writers-container flex">
+                    <div class="writer">
+                        <div class="writer-image">
+                            <img src="./images/yazar1.png" alt="">
+                        </div>
+                        <div class="writer-name">Fatih Altaylı</div>
+                    </div>
+
+                    <div class="writer">
+                        <div class="writer-image">
+                            <img src="./images/yazar2.png" alt="">
+                        </div>
+                        <div class="writer-name">Serdar Ali Çelikler</div>
+                    </div>
+
+                    <div class="writer">
+                        <div class="writer-image">
+                            <img src="./images/yazar3.png" alt="">
+                        </div>
+                        <div class="writer-name">Murat Bardakçı</div>
+                    </div>
+
+                    <div class="writer">
+                        <div class="writer-image">
+                            <img src="./images/yazar4.png" alt="">
+                        </div>
+                        <div class="writer-name">Kübra Par</div>
+                    </div>
+
+                    <div class="writer">
+                        <div class="writer-image">
+                            <img src="./images/yazar5.png" alt="">
+                        </div>
+                        <div class="writer-name">Esin Övet</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer ">
+        <div class="footer-container flex">
+            <div class="logo">
+                <a href="#">Haberler</a>
+            </div>
+            <nav class="nav2">
+                <ul class="flex">
+                    <li><a href="#">Gündem</a></li>
+                    <li><a href="#">Teknoloji</a></li>
+                    <li><a href="#">Siyaset</a></li>
+                    <li><a href="#">Uzay</a></li>
+                    <li><a href="#">Askeri</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <ul class="flex">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
