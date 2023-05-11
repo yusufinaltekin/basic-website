@@ -10,6 +10,9 @@
 .news .writers-container::-webkit-scrollbar {
     scale: none;
 }
+body {
+    overflow-x: hidden;
+}
 
 .hamburger,
 .close {
