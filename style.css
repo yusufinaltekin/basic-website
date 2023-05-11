@@ -253,7 +253,9 @@ main {
     text-align: right;
 }
 marquee{
+    width:100%;
     overflow:hidden;
+}
 
 .footer {
     background-color: var(--backgroundColor);
