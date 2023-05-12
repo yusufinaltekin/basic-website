@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .news .writers::-webkit-scrollbar,
@@ -417,6 +418,7 @@ main {
         z-index: 99;
         overflow: hidden;
         transition: all .4s ease;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav .list {
