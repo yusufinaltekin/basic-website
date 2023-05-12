@@ -112,6 +112,7 @@ main {
     border-radius: 15px;
     opacity: 0;
     transition: all .5s ease;
+    -webkit-overflow-scrolling: touch;
 }
 
 .slider .active {
@@ -163,6 +164,7 @@ main {
         -5px 5px 5px var(--greyColor);
     transition: translateY .5s ease;
     cursor: pointer;
+    -webkit-overflow-scrolling: touch;
 }
 
 .news .news-card-container .news-card:hover {
@@ -186,6 +188,7 @@ main {
     height: 500px;
     text-align: center;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 
 }
 
@@ -322,6 +325,7 @@ main {
         justify-content: flex-start;
         gap: 40px;
         overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .news .writers .writers-container .writer {
@@ -372,6 +376,7 @@ main {
 @media only screen and (max-width:574px) {
     body {
         overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
 
