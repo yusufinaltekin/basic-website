@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 .news .writers::-webkit-scrollbar,
@@ -112,7 +111,6 @@ main {
     border-radius: 15px;
     opacity: 0;
     transition: all .5s ease;
-    -webkit-overflow-scrolling: touch;
 }
 
 .slider .active {
@@ -164,7 +162,6 @@ main {
         -5px 5px 5px var(--greyColor);
     transition: translateY .5s ease;
     cursor: pointer;
-    -webkit-overflow-scrolling: touch;
 }
 
 .news .news-card-container .news-card:hover {
@@ -188,8 +185,6 @@ main {
     height: 500px;
     text-align: center;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-
 }
 
 .news .writers h3 {
@@ -325,7 +320,6 @@ main {
         justify-content: flex-start;
         gap: 40px;
         overflow: auto;
-        -webkit-overflow-scrolling: touch;
     }
 
     .news .writers .writers-container .writer {
@@ -376,10 +370,7 @@ main {
 @media only screen and (max-width:574px) {
     body {
         overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
     }
-
-
     main {
         width: 100%;
         padding: 0px 20px;
@@ -419,11 +410,10 @@ main {
         right: 0;
         width: 0vw;
         height: 100vh;
-        background-color: var(--backgroundColor);
+        background-color:           var(--backgroundColor);
         z-index: 99;
         overflow: hidden;
         transition: all .4s ease;
-        -webkit-overflow-scrolling: touch;
     }
 
     .nav .list {
