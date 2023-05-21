@@ -10,16 +10,18 @@ const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".close");
 const menu = document.querySelector(".nav");
 const menuList = document.querySelector(".list");
+const navLinks = document.querySelectorAll(".nav>ul>li>a")
+
+
 
 hamburger.addEventListener("click", (e) => {
-    console.log(e.target);
     menu.classList.add("show");
-    document.querySelector("body").style.overflowY="hidden";
+    document.querySelector("body").style.overflowY = "hidden";
 })
 
-close.addEventListener("click", () => {
+close.addEventListener("click", (e) => {
     menu.classList.remove("show");
-    document.querySelector("body").style.overflowY="auto";
+    document.querySelector("body").style.overflowY = "auto";
 })
 
 window.addEventListener("scroll", () => {
@@ -31,6 +33,14 @@ window.addEventListener("scroll", () => {
     }
 })
 
+
+navLinks.forEach(element => {
+    element.addEventListener("click", () => {
+        menu.classList.remove("show");
+        document.querySelector("body").style.overflowY = "scroll";
+    })
+
+});
 const nextSlide = (e) => {
     const activeSlide = document.querySelector(".active");
     activeSlide.classList.remove("active");
